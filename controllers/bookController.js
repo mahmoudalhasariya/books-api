@@ -135,17 +135,6 @@ const deleteBook = asyncHandler(async (req, res) => {
 })
 
 
-// Comparision Query Operator
-// $eq(equal) جميع الكتب التي سعرها يساوي 10
-// $ne(not equal)جميع الكتب التي سعرها لا يساوي 10
-// $lt(less than)اقل من 10 10
-// $lte(less than and equal) اقل من و يساوي 10
-// $gt(greeter than ) اكبر من 10
-// $gte(greeter than and equal)
-// $in[8,9] الكتب التي اسعارها بين ال 8 و 9
-// $nin[8,9] كل الكتب ماعدا بين ال 8 و9 
-
-
 module.exports = {
     getAllBooks,
     getBookById,
