@@ -124,11 +124,7 @@ const updateBook = asyncHandler(async (req, res) => {
  */
 
 const deleteBook = asyncHandler(async (req, res) => {
-    // const {error}=validateCreatBook(req.body);   // لا نحتاج الى عملية تحقق من الحذف نحتاجها فقد في التعديل و الاضافة
-    // if(error){
-    //    return res.status(400).json({message:error.details[0].message})
-    // }
-
+ 
     const book = await Book.findById(req.params.id)
     if (book) {
         await Book.findByIdAndDelete(req.params.id)
